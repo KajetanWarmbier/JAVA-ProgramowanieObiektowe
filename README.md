@@ -32,4 +32,4 @@ Library | Use
 Swing | GUI
 
 ## Example
-![alt text]()
+![alt text](https://raw.githubusercontent.com/KajetanWarmbier/JAVA-ProgramowanieObiektowe/master/README%20Assets/javaLab01Ex05screen.png)
