@@ -1,3 +1,6 @@
+/*Project created and maintained by Kajetan Warmbier
+ * Contact info: k.warmbier.436@studms.ug.edu.pl*/
+
 package com.company;
 
 public class TestApp {
@@ -126,7 +129,7 @@ class MenuEdycja {
     }
 
     public void ponow() {
-        System.out.println("");
+        System.out.println("Ponawiam...");
     }
 
     public void usun() {
