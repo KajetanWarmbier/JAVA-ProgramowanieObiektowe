@@ -27,32 +27,32 @@ public class Liczydlo extends JFrame implements ActionListener{
         btnPlus = new JButton("+");
         btnPlus.addActionListener(this);
         btnPlus.setFocusPainted(false);
-        btnPlus.setContentAreaFilled(false);
+        btnPlus.setBackground(new Color(225,225,225));
 
         btnMinus = new JButton("-");
         btnMinus.addActionListener(this);
         btnMinus.setFocusPainted(false);
-        btnMinus.setContentAreaFilled(false);
+        btnMinus.setBackground(new Color(225,225,225));
 
         btnMultiply = new JButton("*");
         btnMultiply.addActionListener(this);
         btnMultiply.setFocusPainted(false);
-        btnMultiply.setContentAreaFilled(false);
+        btnMultiply.setBackground(new Color(225,225,225));
 
         btnDivide = new JButton("/");
         btnDivide.addActionListener(this);
         btnDivide.setFocusPainted(false);
-        btnDivide.setContentAreaFilled(false);
+        btnDivide.setBackground(new Color(225,225,225));
 
         btnModulo = new JButton("%");
         btnModulo.addActionListener(this);
         btnModulo.setFocusPainted(false);
-        btnModulo.setContentAreaFilled(false);
+        btnModulo.setBackground(new Color(225,225,225));
 
         btnCzysc = new JButton("Czysc");
         btnCzysc.addActionListener(this);
         btnCzysc.setFocusPainted(false);
-        btnCzysc.setContentAreaFilled(false);
+        btnCzysc.setBackground(new Color(225,225,225));
 
         /*Text elements*/
         JTextArea liczbaA = new JTextArea("Liczba A");
