@@ -19,6 +19,7 @@ Repository created in order to collect Java projects for course "**Programowanie
 * [LAB05: ABSTRACTION](https://github.com/KajetanWarmbier/JAVA-ProgramowanieObiektowe/tree/master/LAB05)
 * [LAB06: ADDITION]()
 * [LAB07: ADDITION++]()
+* [ZALICZENIE](https://github.com/KajetanWarmbier/JAVA-ProgramowanieObiektowe/tree/master/Zaliczenie)
 
 ## Technologies
 Created with:
