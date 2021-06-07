@@ -55,57 +55,55 @@ public class Liczydlo extends JFrame implements ActionListener{
         btnCzysc.setBackground(new Color(225,225,225));
 
         /*Text elements*/
-        JTextArea liczbaA = new JTextArea("Liczba A");
+        /*JTextField used in order to properly set text horizontally and vertically*/
+        JTextField liczbaA = new JTextField("Liczba A");
         liczbaA.setEditable(false);
         liczbaA.setBackground(null);
-        JTextArea liczbaB = new JTextArea("Liczba B");
+        liczbaA.setHorizontalAlignment(SwingConstants.LEFT);
+        liczbaA.setBorder(null);
+
+        JTextField liczbaB = new JTextField("Liczba B");
         liczbaB.setEditable(false);
         liczbaB.setBackground(null);
-        JTextArea wynik = new JTextArea("Wynik");
+        liczbaB.setHorizontalAlignment(SwingConstants.LEFT);
+        liczbaB.setBorder(null);
+
+        JTextField wynik = new JTextField("Wynik");
         wynik.setBackground(null);
         wynik.setEditable(false);
+        wynik.setHorizontalAlignment(SwingConstants.LEFT);
+        wynik.setBorder(null);
 
         /*Input/output elements*/
         liczbaAInput = new JTextField("");
+        liczbaAInput.setHorizontalAlignment(SwingConstants.RIGHT);
         liczbaBInput = new JTextField("");
+        liczbaBInput.setHorizontalAlignment(SwingConstants.RIGHT);
         wynikOutput = new JTextField("");
+        wynikOutput.setHorizontalAlignment(SwingConstants.RIGHT);
         wynikOutput.setEditable(false);
-
-        /*GrdiLayout for textPanel*/
-        GridLayout textPanelLayout = new GridLayout(3,1, 0, 10);
-        /*textPanel*/
-        JPanel textPanel = new JPanel(textPanelLayout);
-        textPanel.setBorder(BorderFactory.createEmptyBorder(5,0,0,0));
-        textPanel.add(liczbaA);
-        textPanel.add(liczbaB);
-        textPanel.add(wynik);
-
-
-        /*GrdLayout for numbersPanel*/
-        GridLayout numbersPanelLayout = new GridLayout(3,1, 0, 5);
-        /*numbersPanel*/
-        JPanel numbersPanel = new JPanel(numbersPanelLayout);
-        numbersPanel.setBorder(BorderFactory.createEmptyBorder(5,0,0,0));
-        numbersPanel.add(liczbaAInput);
-        numbersPanel.add(liczbaBInput);
-        numbersPanel.add(wynikOutput);
 
 
         /*GridLayout for mainPanel*/
-        GridLayout mainPanelLayout = new GridLayout(4,2);
+        GridLayout mainPanelLayout = new GridLayout(6,2);
         mainPanelLayout.setHgap(15);
         mainPanelLayout.setVgap(5);
         /*mainPanel*/
         JPanel mainPanel = new JPanel(mainPanelLayout);
-        mainPanel.setBorder(BorderFactory.createEmptyBorder(5,5,5,5));
+        mainPanel.setBorder(BorderFactory.createEmptyBorder(5,1,5,1));
         mainPanel.add(btnPlus);
         mainPanel.add(btnMinus);
         mainPanel.add(btnMultiply);
         mainPanel.add(btnDivide);
         mainPanel.add(btnModulo);
         mainPanel.add(btnCzysc);
-        mainPanel.add(textPanel);
-        mainPanel.add(numbersPanel);
+        mainPanel.add(liczbaA);
+        mainPanel.add(liczbaAInput);
+        mainPanel.add(liczbaB);
+        mainPanel.add(liczbaBInput);
+        mainPanel.add(wynik);
+        mainPanel.add(wynikOutput);
+
 
         setContentPane(mainPanel);
         setSize(450, 350);
@@ -122,8 +120,6 @@ public class Liczydlo extends JFrame implements ActionListener{
             liczbaAInput.setText("");
             liczbaBInput.setText("");
             wynikOutput.setText("");
-        } else if (liczbaAInput.getText() == null) {
-            JOptionPane.showMessageDialog(this, "Nie wprowadzono liczby A", "Ostrzeżenie", JOptionPane.WARNING_MESSAGE);
         } else {
 
             try {
@@ -142,8 +138,6 @@ public class Liczydlo extends JFrame implements ActionListener{
             liczbaAInput.setText("");
             liczbaBInput.setText("");
             wynikOutput.setText("");
-        } else if (liczbaBInput.getText() == null) {
-            JOptionPane.showMessageDialog(this, "Nie wprowadzono liczby B", "Ostrzeżenie", JOptionPane.WARNING_MESSAGE);
         } else {
 
             try {
